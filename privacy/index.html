@@ -75,7 +75,7 @@
 <div class="wrap">
 <header>
   <h1>TapePhono 隐私政策</h1>
-  <p class="meta"><strong>生效日期：</strong>2026 年 11 月 6 日　<strong>最后更新：</strong>2026 年 11 月 6 日　<strong>版本：</strong>1.0</p>
+  <p class="meta"><strong>生效日期：</strong>2026 年 11 月 7 日　<strong>最后更新：</strong>2026 年 11 月 7 日　<strong>版本：</strong>1.0</p>
   <p class="lede">TapePhono 是一款以本地磁带库为核心的虚拟卡座应用。本政策说明我们在 iOS、iPadOS、macOS 与 watchOS 上如何处理你的信息，以及你享有的权利。</p>
   <div class="lang"><a href="#zh">简体中文</a><a href="#en">English</a></div>
 </header>
@@ -124,13 +124,13 @@
 <p>这些数据保存在应用沙盒内的 Application Support 目录或系统偏好设置中，用于恢复你的使用状态。</p>
 
 <h3>2.3 反馈信息（仅在你主动提交时）</h3>
-<p>当你使用“反馈 / Bug 报告”功能并点击发送时，我们会通过 Formspree 接收以下内容：</p>
+<p>当你使用“反馈 / Bug 报告”功能并点击发送时，我们会通过 Cloudflare Worker 接收、经 Resend 投递以下内容：</p>
 <table>
   <thead><tr><th>字段</th><th>是否必填</th><th>用途</th></tr></thead>
   <tbody>
     <tr><td>反馈内容</td><td>必填</td><td>理解并处理你报告的问题或建议</td></tr>
     <tr><td>电子邮箱</td><td>选填</td><td>仅在需要向你回复或补充信息时使用</td></tr>
-    <tr><td>设备信息（TapePhono 版本、操作系统名称与版本）</td><td>自动附带</td><td>定位与系统/版本相关的问题</td></tr>
+    <tr><td>设备信息（TapePhono 版本、操作系统名称与版本、设备型号）</td><td>自动附带</td><td>定位与系统/版本相关的问题</td></tr>
   </tbody>
 </table>
 <p>反馈内容由你自由填写。请勿在反馈中提交敏感个人信息、身份证件、精确地址、支付信息或他人的个人信息。</p>
@@ -144,6 +144,9 @@
   <li>不读取你的音频内容用于训练模型或任何与播放无关的目的。</li>
 </ul>
 <p>Apple 可能根据你的系统设置，向我们提供 App Store Connect 中的聚合崩溃报告与使用统计。此类报告由 Apple 控制，通常不包含你的音频文件或文件路径。</p>
+
+<h3>2.5 Pro 购买与权益</h3>
+<p>升级 TapePhono Pro 时，交易由 Apple App Store 处理。应用通过 StoreKit 2 仅读取 Apple 验证的交易与权益状态（是否已解锁 Pro），用于恢复购买与跨设备解锁；我们不会接收、保存或传输你的支付卡号、账单地址、Apple ID 密码或完整购买历史。Apple 的隐私政策适用于支付与 App Store 账户流程。</p>
 
 <h2 id="s3">3. 处理目的与法律依据</h2>
 <table>
@@ -177,7 +180,7 @@
 <p>卸载应用通常会删除其沙盒数据；但系统备份（如 iCloud 备份或电脑备份）可能仍保留副本，具体取决于你的备份设置。</p>
 
 <h3>5.2 反馈数据</h3>
-<p>反馈内容与选填邮箱通过 Formspree 传输并存储，供我们处理问题与回复。我们仅在实现反馈目的所需的期间保留，通常不超过 <strong>24 个月</strong>；随后删除或匿名化，法律另有要求或争议处理需要的除外。</p>
+<p>反馈内容与选填邮箱通过 Cloudflare Worker 传输，并由 Resend 投递至开发者邮箱，供我们处理问题与回复。我们仅在实现反馈目的所需的期间保留，通常不超过 <strong>24 个月</strong>；随后删除或匿名化，法律另有要求或争议处理需要的除外。</p>
 
 <h3>5.3 托管与日志</h3>
 <p>本政策页面托管于 GitHub Pages。GitHub 可能按照其自身政策处理访问本页面产生的技术日志（如 IP 地址、浏览器类型、访问时间）。我们不在本页面使用 Cookie、广告或分析脚本。</p>
@@ -187,7 +190,7 @@
 <table>
   <thead><tr><th>接收方</th><th>用途</th><th>所在地</th></tr></thead>
   <tbody>
-    <tr><td>Formspree, Inc.</td><td>接收并转发你主动提交的反馈表单</td><td>美国</td></tr>
+    <tr><td>Cloudflare, Inc. / Resend, Inc.</td><td>接收、转发并投递你主动提交的反馈</td><td>美国</td></tr>
     <tr><td>Apple Inc. / Apple Distribution International</td><td>App Store / TestFlight 分发、聚合崩溃与使用统计</td><td>美国及其他地区</td></tr>
     <tr><td>GitHub, Inc.</td><td>托管本政策页面与项目问题跟踪</td><td>美国</td></tr>
   </tbody>
@@ -222,7 +225,7 @@
 <p>本应用不面向 13 周岁以下儿童（欧洲经济区为 16 周岁以下，除非当地法律允许更低年龄）。我们不会在明知的情况下收集儿童的个人信息。若你认为儿童向我们提交了个人信息，请通过第 12 节联系我们，我们会尽快删除。</p>
 
 <h2 id="s10">10. 第三方链接与服务</h2>
-<p>本应用可能包含指向 App Store、GitHub、Formspree 或本政策页面的链接。点击这些链接后，你将离开本应用，相应网站或服务由第三方运营，适用其隐私政策与条款。我们无法控制第三方的数据处理行为。</p>
+<p>本应用可能包含指向 App Store、GitHub、Cloudflare Worker / Resend 或本政策页面的链接。点击这些链接后，你将离开本应用，相应网站或服务由第三方运营，适用其隐私政策与条款。我们无法控制第三方的数据处理行为。</p>
 
 <h2 id="s11">11. 政策更新</h2>
 <p>我们可能因功能变化、法律要求或服务调整而更新本政策。更新后的政策将在本页面发布，并更新“最后更新”日期。若变更会实质性影响你的权利，我们会通过应用内提示或版本更新说明等合理方式通知你。继续使用本应用即表示你接受更新后的政策；若你不同意，请停止使用并卸载本应用。</p>
@@ -241,7 +244,7 @@
 
 <main id="en" lang="en">
 <h2 style="border-top:0;padding-top:0">Privacy Policy (English)</h2>
-<p class="meta"><strong>Effective:</strong> November 6, 2026　<strong>Last updated:</strong> November 6, 2026　<strong>Version:</strong> 1.0</p>
+<p class="meta"><strong>Effective:</strong> November 7, 2026　<strong>Last updated:</strong> November 7, 2026　<strong>Version:</strong> 1.0</p>
 <p>TapePhono is a local-first virtual cassette deck. This Policy explains how the iOS, iPadOS, macOS and watchOS apps (the “App”) handle your information. The Chinese version is the authoritative version; this English translation is provided for convenience.</p>
 
 <h3>1. Controller and scope</h3>
@@ -251,7 +254,8 @@
 <ul>
   <li><strong>Files you choose:</strong> audio files, folders and paths you select through the system file picker; security-scoped bookmarks stored locally so the App can reopen them; audio metadata (title, album, artist, duration, artwork); locally cached cover images derived from that metadata.</li>
   <li><strong>Local app state:</strong> library structure, sticker style, theme, presets, sound settings, current tape/side, playback position and progress, counter and UI preferences.</li>
-  <li><strong>Feedback you submit:</strong> your message, an optional email address, and automatically attached device information (TapePhono version, OS name and version). Feedback is sent through Formspree.</li>
+  <li><strong>Feedback you submit:</strong> your message, an optional email address, and automatically attached device information (TapePhono version, OS name and version, device model). Feedback is sent through our Cloudflare Worker and delivered by Resend.</li>
+  <li><strong>Pro purchase:</strong> when you buy TapePhono Pro, Apple processes the transaction. The App uses StoreKit 2 only to read Apple-verified entitlement status (whether Pro is unlocked) for purchase restoration and cross-device access. We do not receive or store payment card details, billing addresses, Apple ID passwords or full purchase history; Apple’s privacy policy applies to payment processing.</li>
   <li><strong>What we do not collect:</strong> account credentials, contacts, precise or coarse location, camera/microphone/photos/health data; we do not run advertising or cross-app tracking SDKs, and we do not sell or rent personal information. We do not use your audio content to train models.</li>
 </ul>
 <p>Apple may provide us with aggregated crash reports and usage statistics through App Store Connect, depending on your system settings. Those reports are controlled by Apple and generally do not include your audio files or file paths.</p>
@@ -264,10 +268,10 @@
 
 <h3>5. Storage and retention</h3>
 <p>Library data, bookmarks, cover cache, settings and playback progress are stored locally on your device (in the App sandbox / Application Support) until you delete the relevant tape or progress, clear app data, or uninstall the App. Device backups may retain copies depending on your backup settings.</p>
-<p>Feedback and optional email are transmitted through Formspree and retained only as long as needed to handle and respond, normally no longer than 24 months, unless law or dispute resolution requires otherwise. This page is hosted on GitHub Pages; GitHub may process technical logs under its own policy. We use no cookies, ads or analytics on this page.</p>
+<p>Feedback and optional email are transmitted through our Cloudflare Worker and delivered by Resend, and retained only as long as needed to handle and respond, normally no longer than 24 months, unless law or dispute resolution requires otherwise. This page is hosted on GitHub Pages; GitHub may process technical logs under its own policy. We use no cookies, ads or analytics on this page.</p>
 
 <h3>6. Sharing and international transfers</h3>
-<p>We do not sell personal information. We share it only with: Formspree, Inc. (USA) to receive and forward feedback; Apple (USA and elsewhere) for App Store/TestFlight distribution and aggregated diagnostics; and GitHub, Inc. (USA) for hosting this page and issue tracking. These recipients may be outside your country. Where required, we rely on appropriate safeguards such as the European Commission Standard Contractual Clauses, or on lawful derogations. We may also disclose information where required by law or to protect rights, property and safety.</p>
+<p>We do not sell personal information. We share it only with: Cloudflare, Inc. / Resend, Inc. (USA) to receive, forward and deliver feedback; Apple (USA and elsewhere) for App Store/TestFlight distribution and aggregated diagnostics; and GitHub, Inc. (USA) for hosting this page and issue tracking. These recipients may be outside your country. Where required, we rely on appropriate safeguards such as the European Commission Standard Contractual Clauses, or on lawful derogations. We may also disclose information where required by law or to protect rights, property and safety.</p>
 
 <h3>7. Security</h3>
 <p>We use app sandboxing, system file authorization, HTTPS for feedback, no server-side user accounts, and least-privilege development practices. No method of transmission or storage is completely secure; please protect your device and backups.</p>
@@ -279,7 +283,7 @@
 <p>The App is not directed to children under 13 (or under 16 in the EEA, unless a lower age is permitted by local law). We do not knowingly collect children’s personal information. Contact us if you believe a child has submitted personal information and we will delete it.</p>
 
 <h3>10. Third-party links</h3>
-<p>The App may link to the App Store, GitHub, Formspree or this Policy page. Those services are operated by third parties under their own privacy policies; we do not control their processing.</p>
+<p>The App may link to the App Store, GitHub, Cloudflare Worker / Resend or this Policy page. Those services are operated by third parties under their own privacy policies; we do not control their processing.</p>
 
 <h3>11. Changes</h3>
 <p>We may update this Policy to reflect changes in the App, law or services. The updated Policy will be posted on this page with a new “Last updated” date. If changes materially affect your rights, we will provide reasonable notice in the App or release notes. If you do not agree, please stop using and uninstall the App.</p>
@@ -291,7 +295,7 @@
 </main>
 
 <footer>
-  <p>TapePhono · Privacy Policy · Version 1.0 · 2026-11-06 · <a href="../manual/">操作说明 / User Guide</a></p>
+  <p>TapePhono · Privacy Policy · Version 1.0 · 2026-11-07 · <a href="../manual/">操作说明 / User Guide</a></p>
   <p>本页面为静态页面，不设置 Cookie、不加载第三方分析或广告脚本。This page is static and sets no cookies or third-party analytics.</p>
 </footer>
 </div>
