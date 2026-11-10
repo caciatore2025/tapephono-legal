@@ -1,7 +1,7 @@
 # TapePhono 隐私政策 / Privacy Policy
 
 - 生效日期 / Effective: 2026-11-07
-- 最后更新 / Last updated: 2026-11-07
+- 最后更新 / Last updated: 2026-11-10
 - 版本 / Version: 1.0
 - 正式页面 / Canonical page: https://caciatore2025.github.io/tapephono-legal/privacy/
 - 运营者 / Controller: TapePhono 开发者（CACCIATORE）
@@ -15,8 +15,9 @@
 - 反馈：仅在你主动提交时，通过 Cloudflare Worker 接收、经 Resend 投递反馈内容、可选邮箱、TapePhono 版本、操作系统版本与设备型号。
 - 不收集：位置、通讯录、相机、麦克风、照片、健康数据；无广告/行为分析/跨应用追踪；不出售个人信息。
 - 第三方：Cloudflare / Resend（反馈）、Apple（分发与聚合诊断）、GitHub（本页面托管）。
-- 权利：访问、更正、删除、限制、反对、可携带、撤回同意、投诉；联系渠道为 GitHub Issues。
+- 权利：访问、更正、删除、限制、反对、可携带、撤回同意、投诉；联系渠道为 tapephono2026@gmail.com 或 GitHub Issues。
 
 ## 联系方式 / Contact
 
+tapephono2026@gmail.com
 https://github.com/caciatore2025/tapephono-legal/issues
